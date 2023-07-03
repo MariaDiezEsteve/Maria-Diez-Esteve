@@ -1,0 +1,326 @@
+ /* Common styles for the login */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+ @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 35rem;
+    height: 35.25rem;
+}
+
+.form-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, .2);
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #555;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    width: 20rem;
+    margin: 1.8rem 0;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #333;
+    padding: 0 0.1875rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-group input {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.4rem;
+    color: #333;
+    padding: 0 0.6rem;
+    background: transparent;
+    border: 1px solid #333;
+    outline: none;
+    border-radius: 0.1875rem;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0;
+    font-size: 0.8rem;
+    background: #fff;
+}
+
+.boton {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, #2196f3, #e91e63);
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, .4);
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    border: none;
+    outline: none;
+}
+
+.sign-link {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1.6rem 0;
+}
+
+.sign-link p {
+    color: #333;
+}
+
+.sign-link p a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sign-link p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper {
+        margin-top: 6rem;
+    }
+}
+
+
+/* Navabar style */
+a {
+    color: grey;
+    text-decoration: none;
+  }
+
+  .container{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .header {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+  .menu{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .logo{
+    width: 4.75rem;
+    height: 4.75rem;
+    border-radius: 3.375rem;
+  }
+
+  .menu .navbar ul li {
+    position: relative;
+    float: left;
+  }
+
+  .menu .navbar ul li a {
+    font-size: 2rem;
+    padding: 1.3rem;
+    display: block;
+    text-decoration: none;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  .menu label {
+    cursor: pointer;
+    display: none;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      padding: 1rem;
+    }
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right: 0;
+        background-color: #444444 ;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+}
+
+  /* Footer */
+footer {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem 0;
+  background: rgb(0, 0, 15);
+  border-top: aliceblue 0.3rem solid;
+}
+
+p {
+  color: aliceblue;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.wrapper_footer .icon {
+  position: relative;
+  background: aliceblue;
+  color: rgb(0, 0, 15);
+  border-radius: 50%;
+  margin: 0.8rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper_footer .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 0.9rem;
+  background: aliceblue;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper_footer .tooltip::before {
+  position: absolute;
+  height: 0.5rem;
+  width: 0.5rem;
+  background: aliceblue;
+  top: -0.2rem;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper_footer .icon:hover .tooltip {
+  top: 3.75rem;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper_footer .icon:hover span,
+.wrapper_footer .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper_footer .linkedin:hover,
+.wrapper_footer .linkedin:hover .tooltip,
+.wrapper_footer .linkedin:hover .tooltip::before {
+  background: #0077b5;
+  color: aliceblue;
+}
+
+.wrapper_footer .CodePen:hover,
+.wrapper_footer .CodePen:hover .tooltip,
+.wrapper_footer .CodePen:hover .tooltip::before {
+  background: #4267b2;
+  color: aliceblue;
+}
+
+
+.wrapper_footer .github:hover,
+.wrapper_footer .github:hover .tooltip,
+.wrapper_footer .github:hover .tooltip::before {
+  background: #333;
+  color: aliceblue;
+}

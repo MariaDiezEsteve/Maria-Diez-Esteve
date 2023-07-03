@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style_register.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <!-- Navbar start -->
+<header>
+   <div class="menu container">
+    <div class="menu container">
+        <a href="index.html"><img class="logo" src="img/logo.jpg" alt="light logo"></a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+          <img src="img/menu.png" alt="img hamburguer">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#acceso-rrss">RRSS</a></li>
+                <li><a href="register.html">Registro</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+       <!-- Navbar end-->
+
+    <!-- Form register -->
+  <section class="form-register">
+    <div class="wrapper">
+        <div class="form-wrapper sign-up">
+            <form action="/register" method="GET">
+                <h2>Registro</h2>
+                <div class="input-group">
+                    <input type="text" required name="DNI">
+                    <label>DNI</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" required name="Name">
+                    <label>Nombre</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" required name="Lastname">
+                    <label>Apellidos</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required name="Email">
+                    <label>Correo</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required name="Password">
+                    <label>Contraseña</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="politica" name="politica" required>
+                  <label>Acepto la política de privacidad</label>
+                </div>
+                <button type="submit" class="boton">Sign Up</button>
+                <div class="sign-link">
+                    <p>Ya tienes cuenta <a href="login.html">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer start -->
+  <footer id="acceso-rrss">
+    <div class="social">
+      <p>Siguenos en Redes Sociales</p>
+      <ul class="wrapper_footer">
+        <a href="https://www.linkedin.com/in/mariadiezesteve/" target="_blank">
+          <li class="icon linkedin">
+            <span class="tooltip">LinkedIn</span>
+            <span><i class="fab fa-linkedin"></i></span>
+          </li>
+        </a>
+        <a href="https://github.com/MariaDiezEsteve/" target="_blank">
+          <li class="icon github">
+            <span class="tooltip">GitHub</span>
+            <span><i class="fab fa-github"></i></span>
+          </li>
+        </a>
+        <a href="https://codepen.io/MariaDiez" target="_blank">
+          <li class="icon CodePen">
+            <span class="tooltip">CodePen</span>
+            <span><i class="fab fa-codepen"></i></span>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div class="final_text text-center"></div>
+    <p class="final_text text-center">Copyright &copy; María Diez Esteve</p>
+</footer>
+  <!-- Footer end -->
+</body>
+</html>
